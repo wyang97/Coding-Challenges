@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap");
+
+:root {
+	--primary-red: hsl(1, 90%, 64%);
+	--primary-blue: hsl(219, 85%, 26%);
+	--white: hsl(0, 0%, 100%);
+	--very-light-grayish-blue: hsl(210, 60%, 98%);
+	--light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--very-light-grayish-blue);
+}
+
+.container {
+    width: 720px;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 2.2rem;
+    color: var(--very-dark-blue);
+}
+
+.notifications-counter {
+    color: var(--white);
+    background-color: var(--primary-blue);
+    padding: 4px .8rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.mark-as-read {
+    font-size: 1.2rem;
+    color: var(--dark-grayish-blue);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.mark-as-read:hover {
+    color: var(--primary-blue);
+}
+
+.notifications-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.notification {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info strong {
+    font-weight: 800;
+    cursor: pointer;
+    color: var(--very-dark-blue);
+}
+
+.info strong:hover {
+    color: var(--primary-blue);
+    transition: all .2s ease;
+}
+
+.content {
+    display: inline-block;
+    color: var(--dark-grayish-blue);
+}
+
+.time {
+    font-size: .9rem;
+    color: var(--grayish-blue);
+}
+
+.red-circle {
+    display: inline-block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-red);
+}
+
+.private-message {
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--light-grayish-blue-1);
+    border-radius: 10px;
+}
+
+.flex-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.picture {
+    width: 50px;
+}
+
+.unread {
+    background-color: var(--very-light-grayish-blue);
+}
