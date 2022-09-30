@@ -20,6 +20,7 @@
 
 body {
     font-size: 16px;
+    font-weight: 500;
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: var(--very-light-grayish-blue);
 }
@@ -28,7 +29,7 @@ body {
     width: 720px;
     padding: 2rem;
     border-radius: 1rem;
-    margin: 0 auto;
+    margin: 1rem auto;
     background-color: var(--white);
 }
 
@@ -122,6 +123,7 @@ body {
     width: 8px;
     height: 8px;
     background-color: var(--primary-red);
+    display: none;
 }
 
 .private-message {
@@ -144,4 +146,65 @@ body {
 
 .unread {
     background-color: var(--very-light-grayish-blue);
+}
+
+.unread .red-circle {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 375px;
+        padding: 1rem;
+    }
+
+    .title-wrapper {
+        gap: .5rem;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .notifications-counter {
+        padding: 1px .6rem;
+    }
+
+    .mark-as-read {
+        font-size: 1rem;
+        padding-top: .2rem;
+    }
+
+    .notification {
+        gap: 1rem;
+    }
+
+    .avatar, .picture {
+        width: 40px;
+        height: 40px;
+    }
+
+    .info strong {
+        font-size: .9rem;
+    }
+
+    .content {
+        font-size: .9rem;
+    }
+
+    .time {
+        font-size: .8rem;
+    }
+
+    .private-message {
+        font-size: .9rem;
+        background-color: var(--white);
+        border: 1px solid var(--light-grayish-blue-1);
+    }
+
+    .red-circle {
+        width: 5px;
+        height: 5px;
+    }
 }
